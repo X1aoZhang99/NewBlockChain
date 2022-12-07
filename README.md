@@ -51,18 +51,15 @@ These are specified in the `src/packages_to_install.txt` file.
 This project was built using Python3 but may work with Python2 given a few 
 minor tweaks.
 
-Preprocessing
--------------
-The next step is to build the federated dataset to do federating learning on. You can prepare it by running this script:
 
-    python src/data/federated_data_extractor.py
-    
-The default split is 2 `split_dataset(dataset,2)` which can be changed as per your number of clients.
-
-Training
+# Preprocessing & Training
 --------
 
-Once you've generated chunks of `federated_data_x.d` you can begin training. For this simply 
+```bash
+cd ./src
+bash Run_BlockFL.sh
+```
+
 run the following bash script:
 
     ./src/Run_BlockFL.sh
@@ -70,10 +67,10 @@ run the following bash script:
 Assuming you've installed all `dependencies` and everything else successfully,
 this should start federated learning on the generated federated datasets on blockchain.
 
-Retrieving the models
+# Retrieving the models
 ----------------------
 
-Once you've finished training, you can get the aggregated globally updated model  `federated_modelx.block` per round from the `src/blocks` folder.
+Once you've finished training, you can get the aggregated globally updated model  `federated_modelx.block` per round from the `src/clients` folder.
 
     
  
