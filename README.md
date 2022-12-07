@@ -54,15 +54,11 @@ minor tweaks.
 
 # Preprocessing & Training
 --------
-
+Open your ternimal and run
 ```bash
 cd ./src
 bash Run_BlockFL.sh
 ```
-
-run the following bash script:
-
-    ./src/Run_BlockFL.sh
 
 Assuming you've installed all `dependencies` and everything else successfully,
 this should start federated learning on the generated federated datasets on blockchain.
